@@ -1,0 +1,127 @@
+#works {
+	height: 500px;
+	width: 90%;
+	margin: 0px 2.5%;
+}
+.works-container {
+	padding: 16px;
+	display: grid;
+	grid-template-rows: repeat(2,auto);
+	gap: 10px;
+	text-align: center;
+}
+
+
+
+.works-container-grid {
+	display: flex;
+	justify-content: space-between;
+	
+}
+.works-card {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	box-shadow: inset 4px 4px 6px gray,inset -4px -4px 3px 0px orange;
+	transition: all .3s ease-in-out;
+	font-weight: 500;
+}
+.works-card:hover {
+	cursor: pointer;
+	transform-style: preserve-3d;
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	transition: .2s all linear;
+}
+.works-card:nth-child(2):hover {
+	transform-style: preserve-3d;
+	animation-name: rotate-2;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	transition: .2s all linear;
+}
+.works-container-grid img {
+	background-color: white;
+	width: 33%;
+	height: 30%;
+	margin: 5px 30%;
+	object-fit: cover;
+}
+.works-container-grid h3 {
+	background: transparent;
+	text-align: center;
+}
+.works-container-grid p {
+	text-align: center;
+	background-color: transparent;
+	padding: 15px;
+}
+@media  screen and (max-width:768px) {
+	.works-container {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	text-align: center;
+	}
+	.works-container-grid {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: auto;
+	}
+	.works-card {
+	width: 100%;
+	height: auto;
+	gap: 5px;
+	padding: 16px;
+	margin-bottom: 9px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	box-shadow: inset 4px 4px 6px gray,inset -4px -4px 3px 0px orange;
+	transition: all .3s ease-in-out;
+	font-weight: 500;
+}
+
+}
+@media screen and (max-width:650px) {
+	#works {
+		position: absolute;
+		top: 1450px;
+		
+	}
+	.works-container {
+		margin-top: 20px;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate3d(0,0,0,60deg);
+		color: green;
+	}
+	100% {
+		transform: rotate3d(.5,0,0,360deg);
+	}
+}
+@keyframes rotate-2 {
+	0% {
+			transform: rotate3d(0, 0, 0, 60deg);
+			color: aqua;
+		}
+	
+		100% {
+			transform: rotate3d(0, 1, 0, 360deg);
+			color: green;
+		}
+}

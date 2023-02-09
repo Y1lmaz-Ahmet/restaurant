@@ -1,0 +1,145 @@
+#about {
+	height: 500px;
+	width: 95%;
+	margin: 120px 2.5%;
+}
+
+.about-container {
+	height: 100%;
+	display: flex;
+	position: relative;
+	border-bottom: 1px solid gray;
+	flex-direction: row-reverse;
+}
+
+.about-container img {
+	height: 300px;
+	width: 300px;
+	left: 0%;
+	top: 5%;
+	transform: rotate(35deg);
+	position: absolute;
+	transition: all .6s ease-in-out;
+	background: transparent;
+	
+}
+
+.food-description-about {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	width: 50%;
+	margin-left: 5px;
+}
+
+.food-description-about h3 {
+	font-size: 1.2rem;
+	font-weight: 800;
+	padding: 16px;
+	background-color: transparent;
+	color: black;
+}
+
+.food-description-about p {
+	padding: 16px;
+	font-size: 1.1rem;
+	text-align: left;
+	width: 100%;
+}
+
+.food-description-about button {
+	padding: 16px;
+	text-align: left;
+	width: 33%;
+	border-radius: 13px;
+	margin-top: 14px;
+	transition: all .2s ease;
+	margin-left: 16px;
+}
+
+.food-description-about button:hover {
+	background-color: gray;
+	color: white;
+}
+
+@media screen and (max-width: 768px) {
+	.about-container {
+		display: grid;
+		gap: 5px;
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+
+	.about-container img {
+		height: 70%;
+		margin: 0 auto;
+		margin-left: 0;
+		margin-top: 55px;
+		transform: rotate(0);
+		position: relative;
+		background: transparent;
+	}
+
+	.food-description-about {
+		width: 100%;
+		justify-content: center;
+		text-align: center;
+		background: transparent;
+	}
+
+	.food-description-about p {
+		width: 100%;
+
+	}
+
+	.food-description-about button {
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.about-container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		height: 650px;
+	}
+
+	.about-container img {
+		height: 50%;
+		margin: 0px auto;
+		padding: 16px;
+		margin-left: 55px;
+		transform: rotate(0);
+		position: relative;
+		background: transparent;
+	}
+
+	.food-description-about {
+		width: 100%;
+		justify-content: center;
+		text-align: center;
+		margin-top: -25px;
+	}
+
+	.food-description-about h3 {
+		font-size: 1rem;
+	}
+
+	.food-description-about p {
+		width: 100%;
+		font-size: .9rem;
+	}
+
+	.food-description-about button {
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		font-size: .9rem;
+	}
+}
