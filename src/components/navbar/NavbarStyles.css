@@ -94,6 +94,16 @@
 		visibility: hidden;
 		left: -150%;
 	}
+	.navbar-items li a {
+	border-radius: 0px;
+	background: #e2e8f0;
+	box-shadow: none;
+	padding: 14px;
+	cursor: pointer;
+	color: black;
+	font-weight: 600;
+	font-size: 1.2rem;
+	}
 	
 
 	.navbar-items li  {

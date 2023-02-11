@@ -1,7 +1,7 @@
 #footer {
 	height: 500px;
-	width: 100%;
-	margin: 0;
+	width: 98%;
+	margin: 0px 1%;
 	top: 3300px;
 	position: absolute;
 	background-color: #f1f5f9;
@@ -45,7 +45,7 @@
 	gap: 5px;
 	position: absolute;
 	top: 250px;
-	width: 100%;
+	width: 95%;
 	
 }
 .footer-grid ul {
