@@ -1,7 +1,7 @@
 #footer {
 	height: 500px;
-	width: 95%;
-	margin: 0px 2.5%;
+	width: 100%;
+	margin: 0;
 	top: 3300px;
 	position: absolute;
 	background-color: #f1f5f9;
@@ -13,7 +13,6 @@
 	justify-content: flex-start;
 	flex-direction: column;
 	height: 350px;
-
 	width: 100%;
 	padding: 5px;
 }
@@ -22,13 +21,10 @@
 	border-radius: 13px;
 }
 .footer-row {
-	
 	display: flex;
 	gap: 35px;
 	font-weight: 800;
 	margin-top: 0px;
-	
-	
 }
 .footer-row svg {
 	color: gray;
@@ -69,11 +65,27 @@ li:hover {
 	cursor: pointer;
 	color: green;
 }
-
+a {
+	color: black;
+}
 
 
 @media screen and (max-width:768px) {
 	#footer {
 		top: 3900px;
+	}
+}
+@media screen and (max-width:650px) {
+	#footer {
+		top: 3900px;
+		padding: 0px;
+
+	}
+}
+@media screen and (max-width:380px) {
+	#footer {
+		top: 3900px;
+		padding: 0px;
+		font-size: .8rem;
 	}
 }

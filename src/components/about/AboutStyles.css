@@ -110,13 +110,14 @@
 	}
 
 	.about-container img {
-		height: 50%;
+		height: 30%;
+		width: 50%;
 		margin: 0px auto;
-		padding: 16px;
-		margin-left: 55px;
+		margin-left: 95px;
 		transform: rotate(0);
 		position: relative;
 		background: transparent;
+		top: 0%;
 	}
 
 	.food-description-about {

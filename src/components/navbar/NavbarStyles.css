@@ -82,11 +82,11 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 95px;
+	top: 85px;
 	left: 0;
-	height: 85vh;
+	height: 90vh;
 	width: 100%;
-	background: gray;
+	background-color: #f8fafc;
 	border-radius: 13px;
 	transition: all .5s ease-in-out;
 	}
